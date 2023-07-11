@@ -1,7 +1,7 @@
 from DataManagement import ImportTimeseries
 
 def main():
-    ImportTimeseries.import_nvda_stock_prices()
+    ImportTimeseries.get_data_full()
 
 
 if __name__ == "__main__":
