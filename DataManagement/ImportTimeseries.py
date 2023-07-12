@@ -65,6 +65,14 @@ def get_data_full():
     # Drop first line
     df = df.drop(df.index[0])
 
+    # If ticker is Nvidia then also merge the Nvidia earnings data into the dataframe
+
+    # Read your Nvidia earnings data
+    df_nvidia_earnings = pd.read_csv('DataManagement/nvidia_earnings.csv', index_col='DATE', parse_dates=True)
+
+    # Merge the two dataframes
+    df = df.merge(df_nvidia_earnings, how='left', left_index=True, right_index=True)
+
     # Write the DataFrame to a CSV file
     df.to_csv('DataManagement/daily_data.csv', index_label='DATE')
 
