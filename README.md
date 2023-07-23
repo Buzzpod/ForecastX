@@ -11,5 +11,5 @@ Placeholder text ..............................
 ## Long-Short-Term Memory Model (LSTM)
 Placeholder text ..............................
 ### Input Data Structure
-![](.\Diagrams\lstm_data_structure.PNG)
+![diagram](https://github.com/Buzzpod/ForecastX/blob/main/Diagrams/lstm_data_structure.PNG?raw=true)
 
